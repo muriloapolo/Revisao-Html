@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,13 +8,16 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    	scroll-behavior: smooth;
+	
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background: #edf0f1;
+	width: 100%;
+    	height: 100%;
 }
 
 header li,
@@ -26,11 +29,7 @@ a {
     text-decoration: none;
 }
 
-html body {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
+
 
 header {
     min-width: 650px;
@@ -56,7 +55,7 @@ header {
     cursor: pointer;
 }
 
-.nav_links {
+.nav_links ul {
     list-style: none;
 }
 
@@ -80,15 +79,14 @@ header {
     ####Formatações do conteúdo
 */
 main {
-    width: 100%;
+    width: 100%;	
     padding-top: 60px;
     margin-top: 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
 
 }
 
-#corpo_do_site {
+#corpo_do_site {  
+
     width: 90%;
     margin: 0 auto;
     height: 100%;
@@ -100,10 +98,16 @@ aside ul {
 }
 
 #left_menu {
-    background-color: azure;
-    position: fixed;
-    width: 15%;
+	
+    line-height: 9px;
+    letter-spacing: 0.044em;
     float: left;
+    position: fixed;	
+    background-color: azure;
+    width: 15%;
+   
+    
+    
 
 }
 
@@ -126,6 +130,7 @@ aside ul {
 }
 
 #right_content {
+   
     padding: 5px;
     width: 80%;
     float: right;
