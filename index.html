@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cssconteudo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="imagens/fav_icon_incolor.png" type="image/x-icon">
+    <title>HTML/CSS- REVISÃO</title>
+</head>
+<body>
+<div id="topo_header">
+   <header>        
+            <a class="logo" href="index.html">Murilo Apolo</a>       
+        <nav>
+            <ul class="nav_links">
+                <li> <a href="#">Html 5</a> </li>
+                <li> <a href="cssbasico.html">css 1</a></li>
+                <li> <a href="cssavancado">css 2</a></li>
+                <li> <a href="recursos">html & css | recursos</a> </li>                
+            </ul>
+        </nav>
+    </header>
+</div>
+<main>
+    <div id="corpo_do_site"><!-- Corpo do site-->    
+        <div id="left_menu"><!-- Barra Lateral-->        
+            <aside>
+                <ul>
+                    <li><a href="#cabecalho">Cabeçalho</a></li>
+                    <li><a href="#paragrafo">Parágrafo</a></li>
+                    <li><a href="#format-texto">Formatação</a></li>
+                    <li><a href="#listas">Listas</a></li>
+                    <li><a href="#imagens">Imagens</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li><a href="#tabelas">Tabelas</a></li>
+                    <li><a href="#formularios">Formulários</a></li>
+                    <li><a href="#carac-especiais">Caracteres</a></li>
+                    
+                </ul>               
+            </aside><!-- Fim Barra Lateral-->   
+        </div><!-- Fim barra Lateral--> 
+            <div id="right_content"><!-- Conteúdo principal-->       
+                <article>
+                    <!-- Modelo para referência 
+                    <section id="/ALTERAR/">
+                        <h1 class="titulo">/ALTERAR/</h1><br>
+                        <p>/ALTERAR/</p>                          
+                        </section>                        
+                    -->
+
+                    <section id="topo_corpo">
+                        <h1 class="titulo">HTML:5</h1><br>
+                       <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Aprender/Getting_started_with_the_web/HTML_basico"> HTML não é uma linguagem de programação; é uma linguagem de marcação, usada para definir a estrutura do seu conteúdo. HTML consiste de uma série de elementos, que você usa para delimitar ou agrupar diferentes partes do conteúdo para que ele apareça ou atue de determinada maneira.</blockquote> 
+                       <p>Geralmente as principais partes de um elemento html contém: </p>
+                       <ul>
+                           <li>Tag de abertura.</li>
+                           <li>Tag de fechamento (Nem todos elementos possuem.)</li>
+                           <li>Conteúdo</li>
+                           <li>Os elementos que compõe a tag.</li>
+                       </ul>
+                     
+                       <img class="exemplo-img" src="imagens/rgZBXCd.png"  alt="exemplo de tag HTML">
+                       <br>                    
+                    </section>
+                    <section id="cabecalho">
+                    <h1 class="titulo">Cabeçalhos</h1>
+                    <p>As tags de cabeçalho servem para formatações de texto.</p>
+                    <p>Atualmente existem 6 tags de cabeçalhos, abaixo teremos as tags de acordo com suas importâncias. Da maior importância para menor. 
+                    </p>
+                    
+                    <p> <code>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5 &gt;, &lt;h6&gt;</code></p><br>
+                    <!-- <p>Para &lt;h1&gt; &lt;/h1&gt;:-->
+                        <h1>EXEMPLO</h1>
+                        <h2>EXEMPLO</h2>
+                        <h3>EXEMPLO</h3>
+                        <h4>EXEMPLO</h4>
+                        <h5>EXEMPLO</h5>
+                        <h6>EXEMPLO</h6><br>
+
+                        <p>Cabeçalhos possuem formatações específicas, como espaçamentos e tamanhos, mas é possível modificar com CSS</p> <br>      
+                    </section>
+                    <section id="paragrafo">
+                        <h1 class="titulo">Parágrafo</h1>
+                        <p>Parágrafos são representados pela tag &lt;p&gt;</p>
+                        <p>Como o próprio nome já sugere, eles são empregados para aninhar textos comuns.</p>
+                    </section>
+                    <section id="format-texto">
+                        <h1 class="titulo">Formatação de textos</h1><br>
+                        <p>Existem algumas tags com a semântica necessária para englobar textos, palavras e outros termos no <strong>HTML</strong>. Quando necessário devemos utilizar essas tags para dar um melhor significado no que estamos escrevendo.
+                        </p> 
+                        <p>Segue abaixo um pequena lista com suas respectivas funções, lembre-se que todas essas tags necessitam de abertura e fechamento para fazerem sentido.</p>  
+                        <ul>
+                            <li>&lt;b&gt; <span> - Texto em Negrito </span> </li>
+                            <li>&lt;strong&gt;<span> - Texto importante</span></li>
+                            <li>&lt;i&gt;<span> - Texto em itálico</span></li>
+                            <li>&lt;em&gt;<span> - Texto com ênfase</span> </li>
+                            <li>&lt;mark&gt;<span> - Texto marcado</span></li>
+                            <li>&lt;small&gt;<span> - Texto pequeno</span> </li>
+                            <li>&lt;del&gt;<span> - Texto deletado</span></li>
+                            <li>&lt;ins&gt;<span> - Texto inserido</span></li>
+                            <li>&lt;sub&gt;<span> - Texto subscrito</span> </li>
+                            <li>&lt;sup&gt;<span> - Texto sobrescrito</span> </li>                            
+                        </ul>
+                        <br>
+
+                        <p>Esta tag, não serve para formatar textos, mas é útil para exibir divisões <code> &lt;hr&gt; </code> (horizontal row) ela cria uma linha horizontal na página.</p><hr> <br>
+                        <p>Exemplificando cada uma das tags na mesma ordem:</p><br>
+                        <ul>
+                            <li> <b>- Texto em Negrito</b></li>
+                            <li> <strong>- Texto importante</strong></li>
+                            <li> <i>- Texto em itálico</i></li>
+                            <li> <em>- Texto com ênfase</em></li>
+                            <li> <mark>- Texto marcado</mark></li>
+                            <li> <small>- Texto pequeno</small></li>
+                            <li> <del>- Texto deletado</del></li>
+                            <li> <ins>- Texto inserido</ins></li>
+                            <li> EXEMPLO <sub>- Texto subscrito</sub></li><br>
+                            <li> EXEMPLO<sup>- Texto sobrescrito</sup></li>                            
+                        </ul>
+                        <p>Algumas formatações parecem semelhantes, porém elas tem semântica diferente.</p>
+                    </section>
+                    <section id="listas">
+                        <h1 class="titulo">listas</h1><br>
+                        <p>As listas são representações de textos em forma ordenada. </p>
+                        <p>Temos listas ordenadas, listas sem ordem, listas de descrição. <code>&lt;ol&gt;&lt;/ol&gt;, &lt;ul&gt;&lt;/ul&gt;, &lt;dl&gt;&lt;/dl&gt;</code>, segue exemplo abaixo.</p>
+                        <img src="imagens/listas.png" alt="exemplo de listas">
+                        <p>A lista ordenada e não ordena utilizam dos UL e LI para definir seus itens. A lista de descrição utiliza a marcação DL para definir o tipo de lista e DT para definir o termo e DD para descrever o termo.</p>
+                    </section>
+                    <section id="imagens">
+                        <h1 class="titulo">imagens</h1><br>
+                        <p>Para inserir uma imagem no corpo do nosso site é necessário o uso da tag <code>&lt;img&gt;</code>. Esta tag não necessita de fechamento e pede um atributo chamado <code>alt=""</code> que ajuda os leitores de tela a interpretarem o que está sendo exibido. Geralmente descrevemos o que há na imagem pois é importante para que deficientes visuais possam ter uma maior acessibilidade. Atenção para a palavra acessibilidade. Conforme formos avançando nesta área, será de suma importância investir em acessibilidade.</p>
+                        <p>O atributo "alt" não aparece no corpo do site. Apenas nos leitores de tela.</p>
+                        <p>Podemos inserir imagens de dentro do nosso próprio site ou de links externos. Eu recomendo sempre ter as imagens em seu banco de dados pois imagens de links externos podem ser removidas e sua exibição será prejudicada.</p><br>
+                        <p>exemplo de como usar a tag image quando ela esta salva no seu diretório.</p><br>
+                        &lt;img src="imagens/nome_da_imagem.formato" alt="descrição curta e objetiva da imagem"&gt;
+                        <img src="imagens/pic_trulli.jpg" alt="cabanas em algum lugar do mundo">  
+                        <p>Para inserir uma imagem direto da internet, substitua o conteúdo de dentro das aspas do <code>src=""</code> pelo link da imagem que desejar. exemplo</p> 
+                        <br>
+                        &lt;img src="https://i.ytimg.com/vi/QjZv2ukqb_g/hqdefault.jpg" alt="terra vista do espaço"&gt;
+                      <img src="https://i.ytimg.com/vi/QjZv2ukqb_g/hqdefault.jpg" alt="terra vista do espaço">
+                      <p>Dentro da tag img, podemos colocar outros atributos, como <code>width, height</code>, para definir o tamanho da imagem em questão.</p>
+                        
+                                       
+                    </section>
+                    <section id="links">
+                        <h1 class="titulo">links</h1><br>
+                        <p>Links ou hiperligações são formas de encontrar ou ir para outras informações. Para inserir um link na página devemos inserir a tag <code> &lt;a&gt; &lt;/a&gt;</code> com isso criamos uma âncora, porém, para navegar por links devemos inserir o <code>href=""</code> que será o responsável por direcionar nossa requisição.</p>
+                        <p>dentro da tag link podemos encontrar alguns outros atributos importantes como o <code>target="_atributo</code> , onde cada um terá sua função especificada abaixo. </p> <br> 
+                        <ul>                            
+                            <li>_self - Default. Abre o documento na mesma janela aonde foi clicado</li>
+                            <li>_blank - Abre o link em outra janela</li>
+                            <li>_parent - Abre um documento em uma aba próxima</li>
+                            <li>_top - Abre o documento no corpo da janela </li>
+                        </ul><br>
+                        <p>
+                            <h2>URLs absolutos vs. URLs relativos</h2>
+                            <p>
+                            Um link local (um link para uma página no mesmo site) é especificado com um URL relativo (sem a parte "https: // www"):
+                            Links <HTML></p> <br>
+
+                            <h2>Use uma imagem como link</h2><br>
+
+                            <p>Para usar uma imagem como link, basta colocar a tag <code>&lt;img&gt;</code> dentro da tag <code>&lt;a&gt;</code>.</p><br>
+
+                            <h2>Link para um endereço de e-mail</h2><br>
+
+                            <p>Use mailto: dentro do atributo href para criar um link que abre o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):<br>
+
+                            Exemplo
+                            <br>
+                            <code>&lt;a&gt; href="mailto:someone@example.com"> Enviar e-mail &lt;/a&gt;</code><br>
+                            <span>Resultado:</span>
+                            <a href="mailto:someone@example.com"> Enviar e-mail </a>
+                            <br>
+                            O estilo da fonte, a cor, tamanho e tudo mais, pode ser formatado pelo CSS.
+                            </p><br>
+                            <h2>Botão como um link</h2>
+                            <p>
+                            Para usar um botão HTML como um link, você deve adicionar algum código JavaScript. <br>
+
+                            JavaScript permite que você especifique o que acontece em certos eventos, como o clique de um botão. <br><br>
+                            Exemplo: &lt;button onclick = "document.location = 'https://www.google.com/' "&gt; Pagina do Google &lt;/button&gt;<br>
+                            <br>
+                            Resultado: <button onclick = "document.location = 'index.html' "> Pagina do Google </button><br>
+                            Lembrando que as cores, tamanho da fonte pode ser alterado via CSS.
+                            <br>
+                            No lugar do endereço do Google, poderia ter utilizado uma página interna. Eu mudei o link no botão real para que não tenhamos que sair da nossa page.
+                            Mas a sintaxe é muito fácil e agora só de olhar você consegue assimilar. Funciona mais ou menos como o link relativo.
+                            </p>
+<br>                                    
+                    </section>
+                    <section id="tabelas">
+                        <h1 class="titulo">tabelas</h1><br>
+                        <h2>Definindo uma tabela</h2>
+                        <p>A tag <code>&lt;table&gt;</code> define uma tabela <strong>HTML</strong>. 
+                        Cada linha da tabela é definida com a tag <code>&lt;tr&gt;</code>. O cabeçalho da tabela é definido com tag <code>&lt;th&gt;</code>, cada célula da tabela é definida pela tag <code>&lt;td&gt;</code>.</p><br>
+                        <p>Por predefinição o texto dentro de <code>&lt;th&gt;</code>, é negrito e centralizado.</p>             
+                        <p>Por predefinição o texto dentro de <code>&lt;td&gt;</code> são alinhados à esquerda.</p>
+                        <br>
+                        <p>Exemplos:</p><br>
+                        <br>
+                        <code>
+                            <pre>
+                            &lt;table style="width: 100%"&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Nome:&lt;/th&gt;
+                                    &lt;th&gt;Sobrenome&lt;/th&gt;
+                                    &lt;th&gt;Idade&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Marcos&lt;/td&gt;
+                                    &lt;td&gt;Paulo&lt;/td&gt;
+                                    &lt;td&gt;50&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Evellin&lt;/td&gt;
+                                    &lt;td&gt;Smith&lt;/td&gt;
+                                    &lt;td&gt;36&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;   
+                            </pre>                  
+                        </code>
+                
+                        <table style="width: 100%; border: 1px solid red;">
+                            <tr>
+                                <th>Nome:</th>
+                                <th>Sobrenome</th>
+                                <th>Idade</th>
+                            </tr>
+                            <tr>
+                                <td>Marcos</td>
+                                <td>Paulo</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Evellin</td>
+                                <td>Smith</td>
+                                <td>36</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>
+                            Agora, se você prestou atenção em tudo até aqui, ja consegue identificar o que são tags. Nesse ponto eu já deveria estar falando sobre estilos e etc. Mas como veremos isto em profundidade em breve, vou inserir algumas formatações de estilo para que possamos prosseguir com a criação de tabelas.
+                            
+                        </p>
+                        <p>
+                            Dentro do Header da página, insira uma tag de estilo. <code>&lt;style&gt;  &lt;/style&gt;</code>, para que dentro dela possamos inserir algumas formatações. Mas não se preocupe, iremos ver em breve mais recursos sobre formatações.
+                        </p>
+                     <h2>Adicionar bordas a uma tabela.</h2>
+                     <br>
+                     <p>Insira este código na sua tabela para que o resultado seja o exemplo abaixo. Eu alterarei o tamanho da tabela via CSS para que tenhamos a melhor observação do que estará sendo feito</p>
+                     <code>
+                         <pre>
+            table, th, td {
+            border: 1px solid black;
+            }
+                         </pre>
+                         <br>
+                     </code>    
+                     <table class=" ex-1">
+                         <tr class=" ex-1">
+                             <th class=" ex-1">NOME 1</th>
+                             <th class=" ex-1">NOME 2</th>
+                             <th class=" ex-1">NOME 3</th>
+                         </tr>
+                         <tr class=" ex-1">
+                             <td class=" ex-1">ITEM 1</td>
+                             <td class=" ex-1">ITEM 2</td>
+                             <td class=" ex-1">ITEM 3</td>
+                         </tr>
+                         <tr class=" ex-1">
+                            <td class=" ex-1">VALOR 1</td>
+                            <td class=" ex-1">VALOR 2</td>
+                            <td class=" ex-1">VALOR 3</td>
+                         </tr>
+                    </table>
+                  <br>
+
+                <p>Sempre lembre de inserir bordas para a tabela e para as células da tabela.</p>
+
+                <h2>Juntar as bordas ou colapsar.</h2>
+
+            <br>
+            <p>Se nós repararmos bem na tabela anterior, veremos que ela tem bordas que não estão unidas. Podemos juntar estas bordas para que o acabamento seja melhor.</p>
+            <br>
+            <p>Só inserindo a propriedade <code> border-collapse: collapse;</code>, podemos fazer isso. Observe a diferença abaixo.</p>
+            <table class=" ex-1 ex-2">
+                <tr class=" ex-1">
+                    <th class=" ex-1 ex-2">NOME 1</th>
+                    <th class=" ex-1 ex-2">NOME 2</th>
+                    <th class=" ex-1 ex-2 ">NOME 3</th>
+                </tr>
+                <tr class=" ex-1">
+                    <td class=" ex-1 ex-2">ITEM 1</td>
+                    <td class=" ex-1 ex-2">ITEM 2</td>
+                    <td class=" ex-1 ex-2">ITEM 3</td>
+                </tr>
+                <tr class=" ex-1">
+                   <td class=" ex-1 ex-2">VALOR 1</td>
+                   <td class=" ex-1 ex-2">VALOR 2</td>
+                   <td class=" ex-1 ex-2">VALOR 3</td>
+                </tr>
+           </table>
+           <br>
+           <h2>Adicionando CELL PADDING</h2>
+           <br>
+           <p>Cell padding é especificamente adicionar um espaço entre o conteúdo da célula e suas bordas. </p>
+           <p>
+               Para adicionar um padding a uma <code>th</code> ou <code>td</code> devemos inserir o atributo <code>padding: ;</code> e um valor para que o espaçamento exista.
+           </p>
+           <p>Exemplo:</p>
+           <code>
+               <pre>
+                th, td {
+                    padding: 15px;
+                  }
+               </pre>
+           </code>
+           <table class="espaco1">
+               <tr >
+                   <th class="espaco">Item</th>
+                   <th class="espaco">Item</th>
+                   <th class="espaco">Item</th>
+               </tr>
+               <tr>
+                   <td class="espaco">Teste</td>
+                   <td class="espaco">Teste</td>
+                   <td class="espaco">Teste</td>
+               </tr>
+           </table><br>
+           <h2>Alinhamento à esquerda e Cabeçalhos</h2>
+           <p>Por padrão os elementos são alinhados à direita e os cabeçalhos tem a fonte em negrito. Para alinhar os itens do cabeçalho ou dos dados gerais à esquerda, <code>th, td</code> utilize no csso seguinte <code>
+        <pre> 
+        th, td {
+            text-align: left;
+        }
+        </pre>
+        </code> 
+            </p>
+            <h2>Outras formatações e novas adições</h2>
+            <br>
+            <p>
+            Podemos formatar o espaçamentos das bordas caso elas não estejam formatadas para com <code>collapse</code>. Utilizaremos o <code>table {
+                border-spacing: 5px;
+              }</code> isto adicionará um espaço de 5 pixels entre as bordas dos elementos.
+            </p>
+            <br>
+            <h2>Colunas e Linhas </h2>
+            <p>Em alguns momentos precisamos de linhas ou colunas maiores para fazer caber nossos dados.</p>
+            <p>No exemplo abaixo o meu item 2 deve ocupar 2 colunas e para isso dentro da tag correspondente a ele, irei inserir a formatação: <code>colspan="2"</code> para que ele ocupe duas colunas na tabela. </p>
+            <table class="espaco1">
+                <tr >
+                    <th class="espaco" >Item 1</th>                    
+                    <th class="espaco" colspan="2">Item 2</th>
+                </tr>
+                <tr>
+                    <td class="espaco">Teste 0</td>
+                    <td class="espaco">Teste 1</td>
+                    <td class="espaco">Teste 2</td>
+                </tr>
+            </table><br>
+            <br>
+            <p>
+                No exemplo abaixo eu quero que o Item 1 ocupe 2 linhas na tabela e para isso eu utilizei o <code>rowspan="2"</code>, para que ele obtivesse esse resultado. Agora perceba que o Teste 0 foi empurrado para direita. Esse resultado ocorre pois a linha foi unificada e os itens não ficam sobrepostos, eles são "empurrados" para sua lateral mais adequada. Ou sempre para direita.
+            </p>
+            <table class="espaco1">
+                <tr >
+                    <th class="espaco"  rowspan="2">Item 1</th>                    
+                    <th class="espaco" >Item 2</th>
+                    <th class="espaco" >Item 3</th>
+                </tr>
+                <tr>
+                    <td class="espaco">Teste 0</td>
+                    <td class="espaco">Teste 1</td>
+                    <td class="espaco">Teste 2</td>
+                </tr>
+            </table><br>
+            <h2>Títulos / subtítulos para tabelas</h2>
+            <p> Podemos adicionar subtítulos ou títulos em uma tabela. Para isso utilizamos a tag <code>caption</code>, ela deve ser inserida logo abaixo da tag <code>table</code> que serve de abertura da nossa tabela para que tenhamos um visual agradável.</p><br>
+            <table class="espaco1">
+                <caption>Aqui temos um Caption</caption>
+                <tr >                    
+                    <th class="espaco" >Item 1</th>                    
+                    <th class="espaco" >Item 2</th>
+                    <th class="espaco" >Item 3</th>
+                </tr>
+                <tr>
+                    <td class="espaco">Teste 0</td>
+                    <td class="espaco">Teste 1</td>
+                    <td class="espaco">Teste 2</td>
+                </tr>
+                <br>
+            </table>
+            <p>Para um melhor aprendizado, recomendo o seguinte site <a href="https://www.w3schools.com/html/html_tables.asp">Tabelas w3Schools</a>. É o site que ensina do Front ao Back para aprimoramento e formação. E é aí neste link que você aprenderá mais sobre tabelas.</p>
+                
+
+                    </section>
+                    <section id="carac-especiais">
+                        <h1 class="titulo">Caracteres especiais</h1><br>
+                        <p>Este é um conteúdo que não consigo resumir, pois é muito grande. Imagine-se querendo exibir o símbolo de Raiz quadrada ou Copyright no Browser? Complicado não é?!</p>                          
+                        <p>Mas com Os caracteres especiais é possível fazer aparecer isso: &radic;  e &copy;.</p>
+                        <br>
+                        <p> Abaixo estarão alguns links para esse conteúdo. sugiro dar uma olhada. Eu acredito que seja algo que não deva ser decorado, porém deve saber que eles existem. </p> <br> <br>
+                        <a href="https://www.w3schools.com/html/html_symbols.asp">Símbolos</a>
+                        <br>
+                        <br>
+                        <p></p>
+                        <a href="https://www.w3schools.com/html/html_entities.asp">Entities</a> <br>
+                        <br>
+                        <a href="https://www.w3schools.com/html/html_emojis.asp">Emojis</a>
+                    </section>
+    </div><!-- Fim conteudo principal--> 
+    </div><!-- Corpo do site-->
+    <footer>
+        
+    </footer>
+</main>
+</body>
+</html>
