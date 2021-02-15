@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+}
+
+.ex-1 {
+    border: 1px solid black;
+}
+
+.ex-2 {
+    border-collapse: collapse;
+}
+
+.espaco1 {
+    border-collapse: collapse;
+}
+
+.espaco {
+    border: 1px solid red;
+    padding: 15px;
+}
